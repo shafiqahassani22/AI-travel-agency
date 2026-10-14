@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Smart Travels</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/inner.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="logo" href="./index.html">Smart <span>Travels</span></a>
+        <a class="back" href="./index.html"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </header>
+
+    <main class="wrap">
+        <div class="head">
+            <span class="tag"><i class="fa-solid fa-calendar-check"></i> Booking</span>
+            <h1>Complete Your <span>Booking</span></h1>
+            <p>Fill in your trip details below and we will take care of the rest of your journey.</p>
+        </div>
+
+        <form class="card" action="#" method="get">
+            <div class="grid2">
+                <div class="field">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com">
+                </div>
+            </div>
+
+            <div class="grid2">
+                <div class="field">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="">Category</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="beach">Beach</option>
+                        <option value="city">City</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="honeymoon">Honeymoon</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination">
+                        <option value="">Destination</option>
+                        <option value="santorini">Santorini, Greece</option>
+                        <option value="bali">Bali, Indonesia</option>
+                        <option value="paris">Paris, France</option>
+                        <option value="dubai">Dubai, UAE</option>
+                        <option value="maldives">Maldives</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid2">
+                <div class="field">
+                    <label for="hotels">Hotels</label>
+                    <select id="hotels" name="hotels">
+                        <option value="">Hotels</option>
+                        <option value="5-star">5 Star</option>
+                        <option value="4-star">4 Star</option>
+                        <option value="3-star">3 Star</option>
+                        <option value="resorts">Resorts</option>
+                        <option value="villas">Villas</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="guests">Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" value="2">
+                </div>
+            </div>
+
+            <div class="grid2">
+                <div class="field">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" name="checkin">
+                </div>
+                <div class="field">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" name="checkout">
+                </div>
+            </div>
+
+            <button type="submit" class="btn">
+                <i class="fa-solid fa-check"></i>
+                <span>Confirm Booking</span>
+            </button>
+        </form>
+    </main>
+</body>
+</html>

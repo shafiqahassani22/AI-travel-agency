@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/homestyle.css">
+</head>
+<body>
+    <div class="contaniar">
+        <nav class="navbar">
+            <div class="right-menue">
+               <ul class="right-list">
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#">Destination</a>
+                    <a href="#">Hotels</a>
+                    <a href="#">Tours</a>
+                </li>
+               </ul>
+
+            </div>
+            <!-- <div class="logo"> -->
+                <h2 class="logo">Smart <span>Travels</span></h2>
+            <!-- </div> -->
+            <div class="left-menue">
+              <ul class="left-list">
+                <li>
+                    <a href="#">Booking</a>
+                    <a href="#">About</a>
+                    <div class="has-submenu">
+                      <a href="#" class="user-link"><i class="fa-regular fa-user"></i></a>
+                      <ul class="submenu">
+                        <li><a href="./login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                        <li><a href="./signup.html"><i class="fa-solid fa-user-plus"></i> Sign up</a></li>
+                        <li class="logout"><a href="./logout.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                      </ul>
+                    </div>
+                    <a href="#" id="dark_toggle"><i class="fa-solid fa-moon"></i></a>
+                    <a href=""> <button class="ai-planner-btn" id="planner-btn">Plan MY trip</button></a>
+                </li>
+               </ul>
+            
+
+            </div>
+        </nav>
+
+
+
+
+
+    </div>
+
+    <main class="hero">
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Travel Planner</span>
+            <h1 class="hero-title">Discover the magic of <span>Santorini</span></h1>
+            <p class="hero-desc">Tell our AI where you dream of going, and it will craft a personalized day-by-day itinerary designed just for you.</p>
+
+            <form class="planner-box" action="./ai-planner.html" method="get">
+                <i class="fa-solid fa-location-dot planner-icon"></i>
+                <input type="text" name="destination" id="planner-input" placeholder="Where do you want to go?" autocomplete="off">
+                <button type="submit" class="planner-submit">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Plan with AI</span>
+                </button>
+            </form>
+        </div>
+
+        <form class="booking-box" action="#" method="get">
+                <div class="booking-field">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <select name="category" aria-label="Category">
+                        <option value="">Category</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="beach">Beach</option>
+                        <option value="city">City</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="honeymoon">Honeymoon</option>
+                    </select>
+                </div>
+                <div class="booking-field">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select name="destination" aria-label="Destination">
+                        <option value="">Destination</option>
+                        <option value="santorini">Santorini, Greece</option>
+                        <option value="bali">Bali, Indonesia</option>
+                        <option value="paris">Paris, France</option>
+                        <option value="dubai">Dubai, UAE</option>
+                        <option value="maldives">Maldives</option>
+                    </select>
+                </div>
+                <div class="booking-field">
+                    <i class="fa-solid fa-hotel"></i>
+                    <select name="hotels" aria-label="Hotels">
+                        <option value="">Hotels</option>
+                        <option value="5-star">5 Star</option>
+                        <option value="4-star">4 Star</option>
+                        <option value="3-star">3 Star</option>
+                        <option value="resorts">Resorts</option>
+                        <option value="villas">Villas</option>
+                    </select>
+                </div>
+                <button type="submit" class="booking-btn">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Booking Now</span>
+                </button>
+        </form>
+    </main>
+
+    <section class="destinations">
+        <div class="section-head">
+            <span class="section-tag"><i class="fa-solid fa-compass"></i> Top Picks</span>
+            <h2 class="section-title">Popular <span>Destinations</span></h2>
+            <p class="section-sub">Handpicked places our travelers love the most. Pick your favorite and let our AI build the perfect trip around it.</p>
+        </div>
+
+        <div class="dest-grid">
+            <article class="dest-card">
+                <div class="dest-img">
+                    <img src="./images/destinations/santorini.jpg" alt="Santorini, Greece">
+                    <a class="dest-fav" href="./favorites.html" aria-label="Add Santorini to favorites"><i class="fa-solid fa-heart"></i></a>
+                    <span class="dest-price">From $899</span>
+                </div>
+                <div class="dest-body">
+                    <h3>Santorini</h3>
+                    <p class="dest-country"><i class="fa-solid fa-location-dot"></i> Greece</p>
+                    <div class="dest-meta">
+                        <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                        <a class="dest-link" href="./booking.html">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dest-card">
+                <div class="dest-img">
+                    <img src="./images/destinations/bali.jpg" alt="Bali, Indonesia">
+                    <a class="dest-fav" href="./favorites.html" aria-label="Add Bali to favorites"><i class="fa-solid fa-heart"></i></a>
+                    <span class="dest-price">From $749</span>
+                </div>
+                <div class="dest-body">
+                    <h3>Bali</h3>
+                    <p class="dest-country"><i class="fa-solid fa-location-dot"></i> Indonesia</p>
+                    <div class="dest-meta">
+                        <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                        <a class="dest-link" href="./booking.html">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dest-card">
+                <div class="dest-img">
+                    <img src="./images/destinations/cappadocia.jpg" alt="Cappadocia, Turkey">
+                    <a class="dest-fav" href="./favorites.html" aria-label="Add Cappadocia to favorites"><i class="fa-solid fa-heart"></i></a>
+                    <span class="dest-price">From $699</span>
+                </div>
+                <div class="dest-body">
+                    <h3>Cappadocia</h3>
+                    <p class="dest-country"><i class="fa-solid fa-location-dot"></i> Turkey</p>
+                    <div class="dest-meta">
+                        <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                        <a class="dest-link" href="./booking.html">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dest-card">
+                <div class="dest-img">
+                    <img src="./images/destinations/maldives.jpg" alt="Maldives">
+                    <a class="dest-fav" href="./favorites.html" aria-label="Add Maldives to favorites"><i class="fa-solid fa-heart"></i></a>
+                    <span class="dest-price">From $1,199</span>
+                </div>
+                <div class="dest-body">
+                    <h3>Maldives</h3>
+                    <p class="dest-country"><i class="fa-solid fa-location-dot"></i> Indian Ocean</p>
+                    <div class="dest-meta">
+                        <span class="dest-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+                        <a class="dest-link" href="./booking.html">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dest-card">
+                <div class="dest-img">
+                    <img src="./images/destinations/dubai.jpg" alt="Dubai, UAE">
+                    <a class="dest-fav" href="./favorites.html" aria-label="Add Dubai to favorites"><i class="fa-solid fa-heart"></i></a>
+                    <span class="dest-price">From $999</span>
+                </div>
+                <div class="dest-body">
+                    <h3>Dubai</h3>
+                    <p class="dest-country"><i class="fa-solid fa-location-dot"></i> United Arab Emirates</p>
+                    <div class="dest-meta">
+                        <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                        <a class="dest-link" href="./booking.html">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="dest-card">
+                <div class="dest-img">
+                    <img src="./images/destinations/paris.jpg" alt="Paris, France">
+                    <a class="dest-fav" href="./favorites.html" aria-label="Add Paris to favorites"><i class="fa-solid fa-heart"></i></a>
+                    <span class="dest-price">From $829</span>
+                </div>
+                <div class="dest-body">
+                    <h3>Paris</h3>
+                    <p class="dest-country"><i class="fa-solid fa-location-dot"></i> France</p>
+                    <div class="dest-meta">
+                        <span class="dest-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                        <a class="dest-link" href="./booking.html">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/dark.js"></script>
+</body>
+</html>

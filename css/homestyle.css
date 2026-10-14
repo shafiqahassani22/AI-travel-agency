@@ -1,0 +1,802 @@
+:root {
+  /* ===============================
+     🎯 PRIMARY COLORS (رنگ‌های اصلی)
+     =============================== */
+
+  --color-primary: #0EA5E9; 
+  /* استفاده:
+     - دکمه اصلی (CTA)
+     - لینک‌ها
+     - آیتم active در navbar
+     - focus روی input
+     نقش: هدایت کاربر */
+
+  --color-primary-soft: #38BDF8; 
+  /* استفاده:
+     - hover دکمه‌ها
+     - highlight ملایم
+     - badge های سبک */
+
+  --color-primary-dark: #0369A1; 
+  /* استفاده:
+     - حالت active دکمه
+     - عمق دادن به gradient
+     - border مهم */
+
+  /* ===============================
+     💎 LUXURY ACCENTS (رنگ‌های خاص)
+     =============================== */
+
+  --color-accent-gold: #D4AF37;   
+  /* استفاده:
+     - دکمه Premium
+     - badge (VIP / Pro)
+     - highlight خیلی مهم
+     ⚠️ کم استفاده شود (حداکثر 5%) */
+
+  --color-accent-teal: #14B8A6;
+  /* استفاده:
+     - gradient ها
+     - hover نرم
+     - animation
+     نقش: ترکیب نرم با آبی */
+
+  --gradient-btn: linear-gradient(135deg, #5214a3, #8712bd);
+  /* استفاده:
+     - بخش‌های AI
+     - loading
+     - افکت‌های خاص
+     نقش: حس تکنولوژی */
+
+  /* ===============================
+     🌿 SECONDARY (رنگ مکمل)
+     =============================== */
+
+  --color-secondary: #22C55E;
+  /* استفاده:
+     - success (✔)
+     - پیام تایید
+     - پیشنهاد خوب */
+
+  /* ===============================
+     🌞 BACKGROUND SYSTEM
+     =============================== */
+
+  --color-bg: #F8FAFC;
+  /* استفاده:
+     - بکگراند کل صفحه
+     نقش: تمیز، روشن، چشم‌نواز */
+
+  --color-surface: #FFFFFF;
+  /* استفاده:
+     - کارت‌ها
+     - navbar
+     - فرم‌ها
+     نقش: لایه اصلی سفید */
+
+  --color-border: #E2E8F0;
+  /* استفاده:
+     - border ها
+     - جداکننده‌ها (divider)
+     - outline input */
+
+  /* ===============================
+     ✍️ TEXT SYSTEM
+     =============================== */
+
+  --color-text: #0F172A;
+  /* استفاده:
+     - تیترها
+     - متن مهم */
+
+  --color-text-muted: #64748B;
+  /* استفاده:
+     - توضیحات
+     - placeholder
+     - متن کم اهمیت */
+
+  /* ===============================
+     ✨ GRADIENTS (افکت‌ها)
+     =============================== */
+
+  --gradient-primary: linear-gradient(135deg, #0EA5E9, #14B8A6);
+  /* استفاده:
+     - دکمه اصلی
+     - Hero section
+     - CTA */
+
+  --gradient-luxury: linear-gradient(135deg, #4008d8,#8720a7, #9119af);
+  /* استفاده:
+     - بخش AI
+     - بنر خاص
+     - highlight حرفه‌ای */
+
+  --gradient-planner: linear-gradient(135deg, #4008d8,#8720a7, #9119af);
+
+  --hero-overlay: linear-gradient(90deg, rgba(248, 250, 252, .82) 0%, rgba(248, 250, 252, .45) 42%, rgba(248, 250, 252, 0) 72%);
+}
+
+     .dark {
+  /* ===============================
+     🎯 PRIMARY COLORS (رنگ‌های اصلی)
+     =============================== */
+
+  --color-primary: #38BDF8; 
+  /* استفاده:
+     - دکمه اصلی (CTA)
+     - لینک‌ها
+     - آیتم active در navbar
+     - focus روی input
+     نقش: هدایت کاربر */
+
+  --color-primary-soft: #7DD3FC; 
+  /* استفاده:
+     - hover دکمه‌ها
+     - highlight ملایم
+     - badge های سبک */
+
+  --color-primary-dark: #0284C7; 
+  /* استفاده:
+     - حالت active دکمه
+     - عمق دادن به gradient
+     - border مهم */
+
+  /* ===============================
+     💎 LUXURY ACCENTS (رنگ‌های خاص)
+     =============================== */
+
+  --color-accent-gold: #FACC15;   
+  /* استفاده:
+     - دکمه Premium
+     - badge (VIP / Pro)
+     - highlight خیلی مهم
+     ⚠️ کم استفاده شود (حداکثر 5%) */
+
+  --color-accent-teal: #2DD4BF;
+  /* استفاده:
+     - gradient ها
+     - hover نرم
+     - animation
+     نقش: ترکیب نرم با آبی */
+
+  --color-accent-indigo: #818CF8;
+  /* استفاده:
+     - بخش‌های AI
+     - loading
+     - افکت‌های خاص
+     نقش: حس تکنولوژی */
+
+  /* ===============================
+     🌿 SECONDARY (رنگ مکمل)
+     =============================== */
+
+  --color-secondary: #4ADE80;
+  /* استفاده:
+     - success (✔)
+     - پیام تایید
+     - پیشنهاد خوب */
+
+  /* ===============================
+     🌌 BACKGROUND SYSTEM
+     =============================== */
+
+  --color-bg: #0B1120;
+  /* استفاده:
+     - بکگراند کل صفحه
+     نقش: پایه تاریک برای نمایش بهتر رنگ‌ها */
+
+  --color-surface: #111827;
+  /* استفاده:
+     - کارت‌ها
+     - navbar
+     - فرم‌ها
+     نقش: لایه دوم (کمی روشن‌تر از bg) */
+
+  --color-border: #1F2937;
+  /* استفاده:
+     - border ها
+     - جداکننده‌ها (divider)
+     - outline input */
+
+  /* ===============================
+     ✍️ TEXT SYSTEM
+     =============================== */
+
+  --color-text: #E5E7EB;
+  /* استفاده:
+     - تیترها
+     - متن مهم */
+
+  --color-text-muted: #94A3B8;
+  /* استفاده:
+     - توضیحات
+     - placeholder
+     - متن کم اهمیت */
+
+  /* ===============================
+     ✨ GRADIENTS (افکت‌ها)
+     =============================== */
+
+  --gradient-primary: linear-gradient(135deg, #38BDF8, #2DD4BF);
+  /* استفاده:
+     - دکمه اصلی
+     - Hero section
+     - CTA */
+
+  --gradient-luxury: linear-gradient(135deg, #38BDF8, #818CF8);
+  /* استفاده:
+     - بخش AI
+     - بنر خاص
+     - highlight حرفه‌ای */
+
+  --hero-overlay: linear-gradient(90deg, rgba(11, 17, 32, .85) 0%, rgba(11, 17, 32, .5) 42%, rgba(11, 17, 32, 0) 72%);
+}
+body{
+  background-color:var(--color-bg) ;
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text);
+
+}
+.navbar{
+   background-color: var(--color-surface);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  width: 100%;
+  height: auto;
+  padding: 12px 40px;
+  box-sizing: border-box;
+}
+.right-menue {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+.right-menue ul li{
+   display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  list-style-type:none ;
+  transform: translateY(-2px);
+
+}
+.right-menue ul li a{
+  text-decoration: none;
+    color: var(--color-text);
+    transform: translateY(-2px);
+}
+.left-menue{
+  flex-shrink: 0;
+}
+.left-menue ul li{
+
+   display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  list-style-type:none ;
+   transform: translateY(-2px);
+
+}
+.left-menue ul li a{
+    color: var(--color-text);
+   text-decoration: none;
+    transform: translateY(-2px);
+}
+.logo{
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1;
+  margin: 0;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+.right-menue ul,
+.left-menue ul{
+  margin: 0;
+  padding: 0;
+}
+.right-menue ul li a,
+.left-menue ul li a{
+  line-height: 1.5;
+  white-space: nowrap;
+  transition: color .25s ease, transform .25s ease;
+   transform: translateY(-2px);
+}
+.logo span{
+  color: var(--color-primary);
+}
+.left-menue ul li a i,
+.right-menue ul li a i{
+  font-size: 18px;
+  transition: color .25s ease, transform .25s ease;
+}
+.left-menue ul li a:hover i,
+.right-menue ul li a:hover i{
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+.left-menue ul li a:hover,
+.right-menue ul li a:hover{
+  color: var(--color-primary);
+}
+.ai-planner-btn {
+   border-radius: 10px;
+   background: var(--gradient-planner);
+   border: none;
+   color: #d8caca;
+   cursor: pointer;
+   font-family: 'Poppins', sans-serif;
+   padding: 7px;
+   transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+.ai-planner-btn:hover{
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, .4);
+}
+.ai-planner-btn:active{
+  transform: translateY(-1px);
+  filter: brightness(1);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, .3);
+}
+.has-submenu{
+  position: relative;
+}
+.submenu{
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 170px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, .18);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1200;
+  transition: opacity .25s ease, top .25s ease;
+}
+.has-submenu.open .submenu{
+  opacity: 1;
+  visibility: visible;
+  top: calc(100% + 8px);
+}
+.left-menue .submenu li{
+  display: block;
+  transform: none;
+}
+.left-menue .submenu li a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  transform: none;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+.left-menue .submenu li a:hover{
+  background: linear-gradient(135deg, rgba(14, 165, 233, .12), rgba(99, 102, 241, .12));
+  color: var(--color-primary);
+}
+.left-menue .submenu li a i,
+.left-menue .submenu li a:hover i{
+  font-size: 14px;
+  transform: none;
+  width: 16px;
+  text-align: center;
+}
+.left-menue .submenu li.logout a,
+.left-menue .submenu li.logout a:hover{
+  color: #EF4444;
+}
+.left-menue .submenu li.logout a:hover{
+  background: linear-gradient(135deg, rgba(239, 68, 68, .12), rgba(239, 68, 68, .18));
+}
+.hero{
+  position: relative;
+  min-height: calc(100vh - 76px - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: var(--hero-overlay), url("../images/santorini.jpg");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  padding: 90px max(24px, 6vw);
+  box-sizing: border-box;
+}
+.hero-content{
+  max-width: 620px;
+}
+.hero-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-primary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, .06);
+}
+.hero-badge i{
+  font-size: 12px;
+}
+.hero-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -.5px;
+  margin: 24px 0 18px;
+  color: var(--color-text);
+}
+.hero-title span{
+  color: var(--color-primary);
+}
+.hero-desc{
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 32px;
+  color: var(--color-text-muted);
+}
+.planner-box{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 8px 8px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, .10);
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+.planner-box:focus-within{
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, .15), 0 18px 40px rgba(15, 23, 42, .10);
+}
+.planner-icon{
+  color: var(--color-primary);
+  font-size: 16px;
+}
+#planner-input{
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 12px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: var(--color-text);
+}
+#planner-input::placeholder{
+  color: var(--color-text-muted);
+}
+.planner-submit{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  padding: 13px 22px;
+  border-radius: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--gradient-planner);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+.planner-submit:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 12px 26px rgba(99, 102, 241, .4);
+}
+.planner-submit:active{
+  transform: translateY(0);
+}
+.booking-box{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  z-index: 5;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  flex-wrap: nowrap;
+  width: min(1120px, 92vw);
+  padding: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, .22);
+}
+.booking-field{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  padding: 11px 14px;
+  background: var(--color-bg);
+  border: none;
+  border-radius: 12px;
+}
+.booking-field i{
+  color: var(--color-primary);
+  font-size: 14px;
+}
+.booking-field select{
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+.booking-field select option{
+  color: #0F172A;
+  background: #ffffff;
+}
+.booking-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  padding: 13px 24px;
+  border-radius: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap;
+  background: var(--color-accent-gold);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+.booking-btn:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 12px 26px rgba(212, 175, 55, .45);
+}
+.booking-btn:active{
+  transform: translateY(0);
+}
+@media (max-width: 980px){
+  .hero{
+    padding: 64px 24px;
+  }
+  .hero-title{
+    font-size: 42px;
+  }
+}
+@media (max-width: 560px){
+  .hero-title{
+    font-size: 32px;
+  }
+  .planner-box{
+    flex-wrap: wrap;
+    padding: 14px;
+  }
+  .planner-submit{
+    width: 100%;
+    justify-content: center;
+  }
+}
+.destinations{
+  background: var(--color-bg);
+  padding: 130px max(24px, 6vw) 90px;
+  box-sizing: border-box;
+}
+.section-head{
+  max-width: 640px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+.section-tag{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-primary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, .06);
+}
+.section-tag i{
+  font-size: 12px;
+}
+.section-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -.5px;
+  margin: 20px 0 14px;
+  color: var(--color-text);
+}
+.section-title span{
+  color: var(--color-primary);
+}
+.section-sub{
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+.dest-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.dest-card{
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(14, 165, 233, .28);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.dest-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 28px 60px rgba(14, 165, 233, .45);
+  border-color: var(--color-primary);
+}
+.dest-img{
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+}
+.dest-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease;
+}
+.dest-card:hover .dest-img img{
+  transform: scale(1.08);
+}
+.dest-img::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, .45), transparent 60%);
+}
+.dest-price{
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 2;
+  padding: 6px 13px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  background: var(--color-accent-gold);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .25);
+}
+.dest-body{
+  padding: 20px 22px 22px;
+}
+.dest-body h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 4px;
+}
+.dest-country{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin: 0 0 16px;
+}
+.dest-country i{
+  color: var(--color-primary);
+  font-size: 13px;
+}
+.dest-meta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+.dest-rating{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+.dest-rating i{
+  color: var(--color-accent-gold);
+  font-size: 13px;
+}
+.dest-fav{
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #EF4444;
+  background: rgba(255, 255, 255, .92);
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .2);
+  transition: transform .25s ease, background .25s ease;
+}
+.dest-fav:hover{
+  transform: scale(1.12);
+  background: #ffffff;
+}
+.dest-fav i{
+  font-size: 15px;
+}
+.dest-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-accent-gold);
+  transition: gap .25s ease;
+}
+.dest-link:hover{
+  gap: 10px;
+}
+.dest-link i{
+  font-size: 12px;
+}
+@media (max-width: 980px){
+  .destinations{
+    padding: 110px max(20px, 5vw) 70px;
+  }
+  .section-title{
+    font-size: 36px;
+  }
+}
+@media (max-width: 560px){
+  .section-title{
+    font-size: 30px;
+  }
+  .dest-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+    <div class="auth-card">
+
+      <div class="auth-form">
+        <div class="auth-top">
+          <a href="./index.html" class="go-home">
+            <i class="fa-solid fa-arrow-left"></i> Go Home
+          </a>
+          <button type="button" id="dark_toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+        <h2 class="auth-brand">Smart <span>Travels</span></h2>
+        <h1>Welcome back</h1>
+        <p class="auth-sub">Log in to keep planning your next adventure.</p>
+
+        <form action="#" method="post">
+          <div class="field">
+            <label for="email">Email</label>
+            <div class="input-box">
+              <i class="fa-regular fa-envelope"></i>
+              <input id="email" type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="input-box">
+              <i class="fa-solid fa-lock"></i>
+              <input id="password" type="password" placeholder="Enter your password" required>
+            </div>
+          </div>
+
+          <div class="auth-row">
+            <label class="remember"><input type="checkbox"> Remember me</label>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="auth-btn">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+          </button>
+        </form>
+
+        <p class="auth-switch">
+          Don't have an account? <a href="./signup.html">Sign up</a>
+        </p>
+      </div>
+
+      <div class="auth-image">
+        <img src="./images/عکس های سفر/59e4d7927d53d7c09469c61714e1905a.jpg" alt="Beautiful travel destination">
+        <div class="auth-overlay">
+          <h3>Your journey starts from here</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./javascript/dark.js"></script>
+
+</body>
+</html>
